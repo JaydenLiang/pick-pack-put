@@ -1,0 +1,21 @@
+{
+  "name": "pick-pack-put",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "pretest": "eslint --fix .",
+    "deploy": "dpl",
+    "build": "scripts/make_dist.js",
+    "test": "nyc mocha --recursive './test/mocha/*.js'"
+  },
+  "author": "fortinet",
+  "license": "MIT",
+  "dependencies": {
+    "fast-glob": "^2.2.2",
+    "fs-extra": "^7.0.0"
+  }
+}
